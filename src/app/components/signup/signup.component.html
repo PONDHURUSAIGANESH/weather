@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container content">
+    <form formGroup= "signup" (ngSubmit)="signupdata(signup)" class="form-box1">
+        <h3> Sign Up</h3>
+        <div class="form-group">
+            <span class="bx bxs-user"></span>
+            <input type="text" formControlName="fname" class="form-control mb-3 mt-3" placeholder="Enter First Name" required>
+        </div>
+        <div class="form-group">
+            <span class="bx bxs-user"></span>
+            <input type="text" formControlName="lname" class="form-control mb-3 mt-3" placeholder="Enter Last Name" required>
+        </div>
+        <div class="form-group">
+            
+            <input type="email" formControlName="email" class="form-control mb-3 mt-3" placeholder="Enter Email" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" formControlName="phoneno" class="form-control mb-3 mt-3" placeholder="Enter Phone number" required>
+        </div>
+
+        <div class="form-group">
+            
+            <input type="password" formControlName="password" class="form-control mb-3 mt-3" placeholder="Enter Password" required>
+        </div>
+
+        <span>You have already account?<a routerLink="/signin">Sign in</a></span><br/>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+</body>
+</html>
